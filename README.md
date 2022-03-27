@@ -35,7 +35,7 @@ The decryption method `Decryption(byte[] Data, RSAParameters RSAKey, bool DoOAEP
 
 ## Usage
 
-Download the repo and open `RSAGuiApp.sln _(built with VS2019)_` and then just run it.
+Download the repo and open `RSAGuiApp.sln (built with VS2019)` and then just run it.
 
 ### Note
 > _If you use a different key than the one used in the app, it won't be decrypted (e.g. if you keep the key before you used it and you think you'll use it later in the app, it won't work)._
