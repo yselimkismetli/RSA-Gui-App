@@ -1,7 +1,8 @@
 # About RSA Gui App 
 
-This application was developed with .NET Framework 4.7.2 and it is very easily to use encrypt and decrypt texts using the RSA algorithm.
+This application was developed with .NET Framework 4.7.2 and it is very easy to use encrypt and decrypt texts using the RSA algorithm.
 
+For the algorithm `Cryptography` **[library](https://docs.microsoft.com/en-us/dotnet/api/system.security.cryptography?view=netframework-4.7.2)** used.
 
 ## Overview of application
 <img src="https://yavuzselimkismetli.com/rsa/rsa_1.jpg" alt="Overview" style="width: 40%; height: 40%"/>
@@ -17,10 +18,18 @@ You can choose an option for creating keys.
 <img src="https://yavuzselimkismetli.com/rsa/rsa_2.jpg" alt="Key selecting" style="width: 40%; height: 40%"/>
 
   
-## Encryption / Decryption
+## Encryption
 
-To encrypt texts or sentences, you must first create a public and a private key. When the application starts, keys (1024 bits) are generated automatically.
-Then you choose an option for the key length and wait for the program to generate the keys. The keys are successfully generated and you can enter your word/phrase in the Plain Text area and then click the Encrypt button. Decrypt your text by typing the sentence into the "Encrypted Text" area and pressing the "Decrypt" button.
+To encrypt texts or sentences, you must first create a public key and a private key. When the application starts, the keys (1024 bits) are generated automatically.
+Then you choose an option for the key length and wait for the program to generate the keys. The keys are generated successfully and you can enter your word/phrase in the Plain Text area and then click the Encrypt button.
+
+The encryption method `Encryption(byte[] Data, RSAParameters RSAKey, bool DoOAEPPadding, int KeyLen)`. This requires the key length, the RSA key (public/private) and `Data` as `byte[]` type.
+
+## Decryption
+
+Decrypt your text by entering the sentence in the "Encrypted Text" area and pressing the "Decrypt" button.
+
+The decryption method `Decryption(byte[] Data, RSAParameters RSAKey, bool DoOAEPPadding, int KeyLen)` has the same requirements as the method `Encryption()`.
 
 <img src="https://yavuzselimkismetli.com/rsa/rsa_3.jpg" alt="Encryption and Decryption" style="width: 60%; height: 60%"/>
 
