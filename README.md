@@ -29,9 +29,13 @@ The encryption method `Encryption(byte[] Data, RSAParameters RSAKey, bool DoOAEP
 
 Decrypt your text by entering the sentence in the "Encrypted Text" area and pressing the "Decrypt" button.
 
-The decryption method `Decryption(byte[] Data, RSAParameters RSAKey, bool DoOAEPPadding, int KeyLen)` has the same requirements as the method `Encryption()`.
+The decryption method `Decryption(byte[] Data, RSAParameters RSAKey, bool DoOAEPPadding, int KeyLen)` has the same requirements as the `Encryption()` method.
 
 <img src="https://yavuzselimkismetli.com/rsa/rsa_3.jpg" alt="Encryption and Decryption" style="width: 60%; height: 60%"/>
+
+## Usage
+
+Download the repo and open `RSAGuiApp.sln (built with VS2019)` and then just run it.
 
 ### Note
 > _If you use a different key than the one used in the app, it won't be decrypted (e.g. if you keep the key before you used it and you think you'll use it later in the app, it won't work)._
